@@ -1,0 +1,444 @@
+DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - FreshMart</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav>
+
+        <h1>FreshMart</h1>
+
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="services.html">Services</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+
+    </nav>
+    <section class="products">
+
+        <h2>Our Grocery Products</h2>
+
+        <div class="product-container">
+
+
+            <div class="card">
+
+                <img src="https://assets.clevelandclinic.org/transform/cd71f4bd-81d4-45d8-a450-74df78e4477a/Apples-184940975-770x533-1_jpg"
+                    alt="Fruits">
+
+                <h3>Apple-1 bag</h3>
+
+                <p>SAR 4</p>
+
+                <input type="number"
+                id="qtyApple"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Apple',4,'qtyApple')">
+                Add to Cart
+                </button>
+
+
+            </div>
+
+            <div class="card">
+
+                <img src="https://veggipedia-cms.production.taks.zooma.cloud/assets/Uploads/Products/tomaat-groenten-Veggipedia.png" alt="Tomato">
+            
+                <h3 class="product-name">Tomato-1 bag</h3>
+            
+                <p>SAR 6</p>
+
+                    <input type="number"
+                    id="qtyTomato"
+                    value="1"
+                    min="1"
+                    class="qty-input">
+
+                    <button onclick="addToCart('Tomato',6,'qtyTomato')">
+                    Add to Cart
+                    </button>        
+            
+            </div>
+
+            <div class="card">
+
+                <img src="https://www.tasteofhome.com/wp-content/uploads/2024/02/GettyImages-1136136105-how-to-store-cucumbers-JVcrop.jpg" alt="Cucumber">
+            
+                <h3 class="product-name">Cucumber-1 bag</h3>
+            
+                <p>SAR 5</p>
+
+                <input type="number"
+                id="qtyCucumber"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Cucumber',5,'qtyCucumber')">
+                Add to Cart
+                </button>
+
+            
+            </div>
+
+            <div class="card">
+
+                <img src="https://m.media-amazon.com/images/I/71lxRrLzLqL._AC_UF1000,1000_QL80_.jpg" alt="Cheese">
+            
+                <h3 class="product-name">Cheese</h3>
+            
+                <p>SAR 10</p>
+            
+                <input type="number"
+                id="qtyCheese"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Cheese',10,'qtyCheese')">
+                Add to Cart
+                </button>
+
+            
+            </div>
+
+            <div class="card">
+
+                <img src="https://www.simplotfood.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F0dkgxhks0leg%2FRKiZ605RAV8kjDQnxFCWP%2Fb03b8729817c90b29b88d536bfd37ac5%2F9-Unusual-Uses-For-Potatoes.jpg%3Ffm%3Dwebp&w=1920&q=75"
+                 alt="Potato">
+            
+                <h3 class="product-name">Potato-1 bag</h3>
+            
+                <p>SAR 5</p>
+            
+                <input type="number"
+                id="qtyPotato"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Potato',5,'qtyPotato')">
+                Add to Cart
+                </button>
+            
+            </div>
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRASM2qNyg7cqLHSiaHGvppQ8GYGAXq5ZXDag&s" alt="Chicken">
+            
+                <h3 class="product-name">Chicken</h3>
+            
+                <p>SAR 15</p>
+            
+                <input type="number"
+                id="qtyChicken"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Chicken',15,'qtyChicken')">
+                Add to Cart
+                </button>
+            
+            </div>
+
+            <div class="card">
+
+                <img src="https://cdn.salla.sa/YeGmO/oYFiUEol7IvOWbrAriDssNeE8t9M6Tb8F4p58NrU.jpg" alt="Dates">
+            
+                <h3 class="product-name">Dates</h3>
+            
+                <p>SAR 10</p>
+            
+                <input type="number"
+                id="qtyDates"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Dates',10,'qtyDates')">
+                Add to Cart
+                </button>
+            
+            </div>
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMQTui3ExV7fGBS00hwbgpfuZU-ukp-0XPA&s"
+                    alt="Bread">
+
+                <h3>Bread</h3>
+
+                <p>SAR 5</p>
+
+                <input type="number"
+                id="qtyBread"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Bread',5,'qtyBread')">
+                Add to Cart
+                </button>
+
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZcDmGMMB5Oi4cOawsompB8EIU54foMszK2Q&s"
+                    alt="Honey">
+
+                <h3>Honey</h3>
+
+                <p>SAR 15</p>
+
+                <input type="number"
+                id="qtyHoney"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Honey',15,'qtyHoney')">
+                Add to Cart
+                </button>
+
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="https://cdn.mafrservices.com/sys-master-root/hb3/h92/51176240021534/663466_main.jpg?im=Resize=480"
+                    alt="Flour">
+
+                <h3>Flour</h3>
+
+                <p>SAR 10</p>
+
+                <input type="number"
+                id="qtyFlour"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Flour',10,'qtyFlour')">
+                Add to Cart
+                </button>
+
+
+            </div>
+>
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb2OPDRJhNs75BqDA_C46rXPTTIXYW4GV9dg&s"
+                    alt="Milk">
+
+                <h3>Milk</h3>
+
+                <p>SAR 5</p>
+
+                <input type="number"
+                id="qtyMilk"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Milk',5,'qtyMilk')">
+                Add to Cart
+                </button>
+
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4TTu2BRxDwVxWcf0DbQwTy4JiD8vkh_axhQ&s"
+                    alt="Eggs">
+
+                <h3>Eggs-Tray of 6</h3>
+
+                <p>SAR 6</p>
+
+                <input type="number"
+                id="qtyEggs"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Eggs',6,'qtyEggs')">
+                Add to Cart
+                </button>
+
+
+            </div>
+
+
+            <div class="card">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVnng0AHXjLOpbCZ8RJP56DB86dTIr23xPPg&s"
+                    alt="Rice">
+
+                <h3>Rice</h3>
+
+                <p>SAR 20</p>
+
+                <input type="number"
+                id="qtyRice"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Rice',20,'qtyRice')">
+                Add to Cart
+                </button>
+
+
+            </div>
+
+            
+            <div class="card">
+
+                <img src="https://chefsmandala.com/wp-content/uploads/2018/03/Banana.jpg"
+                    alt="Fruits">
+
+                <h3>Banana-1 bag</h3>
+
+                <p>SAR 4</p>
+
+                <input type="number"
+                id="qtyBanana"
+                value="1"
+                min="1"
+                class="qty-input">
+
+                <button onclick="addToCart('Banana',4,'qtyBanana')">
+                Add to Cart
+                </button>
+
+
+            </div>
+            
+
+        </div>
+
+    </section>
+
+    <section class="cart-section">
+
+        <h2>Shopping Cart</h2>
+
+        <ul id="cartItems"></ul>
+
+        <h3>Total: SAR<span id="total">0</span></h3>
+
+        <button class="checkout-btn" onclick="checkout()">
+            Checkout
+        </button>
+
+<section class="delivery-section" id="deliverySection">
+
+    <h2>Delivery Details</h2>
+
+    <h3>Total Bill: SAR<span id="finalBill">0</span></h3>
+
+    <form id="deliveryForm">
+
+        <input type="text"
+               placeholder="Enter Your Name"
+               required>
+
+        <input type="text"
+               placeholder="Enter Phone Number"
+               required>
+
+        <input type="text"
+               placeholder="Enter Address"
+               required>
+
+        <textarea placeholder="Additional Notes"></textarea>
+
+        <button type="submit">
+            Place Order
+        </button>
+
+<label class="payment-title">
+    Select Payment Method
+</label>
+
+<select id="paymentMethod" required>
+
+    <option value="">
+        Choose Payment Method
+    </option>
+
+    <option value="cod">
+        Cash on Delivery
+    </option>
+
+    <option value="card">
+        Credit Card
+    </option>
+
+</select>
+
+
+<div id="cardDetails">
+
+    <input type="text"
+           placeholder="Card Holder Name">
+
+    <input type="text"
+           placeholder="Card Number">
+
+    <input type="text"
+           placeholder="Expiry Date">
+
+    <input type="text"
+           placeholder="CVV">
+
+</div>
+
+    </form>
+
+</section>
+
+    </section>
+
+    <footer>
+
+        <p>© 2026 FreshMart Grocery Website</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
